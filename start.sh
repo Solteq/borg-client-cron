@@ -13,7 +13,7 @@ then
 	
 	# Create the cron row
 	( /usr/bin/crontab -l ||/bin/true 2>'/dev/null' \
-		; /bin/echo -e "\n# Backup job\n${CRON} /bin/bash '/job.sh'") | /usr/bin/crontab -
+		; /bin/echo -e "\n# Backup job\n${CRON} /bin/bash '/job.sh' 2>'/dev/console'") | /usr/bin/crontab -
 	
 	# Initialize the repository
 	borg 'init' \
