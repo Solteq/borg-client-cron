@@ -10,10 +10,13 @@ ENV CRON="0 3 * * *"
 
 RUN \
 	install_packages \
-		"cron"
+		"cron" \
+		"syslog-ng-core" \
+		"syslog-ng-mod-journal"
 
 COPY "start.sh" "/start.sh"
 COPY "job.sh" "/job.sh"
+COPY "syslog-ng.conf" "/etc/syslog-ng/syslog-ng.conf"
 
 ENTRYPOINT [ "/bin/bash" ]
 CMD [ "/start.sh" ]
