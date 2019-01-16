@@ -20,4 +20,5 @@ then
 		--encryption 'keyfile'
 fi
 
+syslog-ng
 /usr/sbin/cron -f -L 7
