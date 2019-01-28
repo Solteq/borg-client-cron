@@ -1,6 +1,6 @@
-FROM "mireiawen/borg-client"
+FROM "solteqmagento/borg-client"
 
-MAINTAINER "Mira Liikanen <mir@mireiawen.net>"
+MAINTAINER "Mira Liikanen <mira.liikanen@solteq.com>"
 
 ENV BORG_REPO="/mnt/repo.borg"
 ENV BORG_PASSPHRASE="really_secret"

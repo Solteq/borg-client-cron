@@ -23,5 +23,5 @@ docker run \
 	--env BORG_SOURCES="/data" \
 	--env BORG_KEEP="14 5 12" \
 	--env CRON="15 03 * * *" \
-	mireiawen/borg-client-cron
+	solteqmagento/borg-client-cron
 ```
